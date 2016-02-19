@@ -1,0 +1,57 @@
+<div class="panel panel-default panel-contact"  ng-controller="ContactDetailsFormController as ctrl">
+  <div class="panel-heading">
+    <h4>{{'CONTACT.Details' | translate}}</h4>
+  </div>
+  <div class="panel-body">
+    <form name="DetailsForm"
+          class="col-md-6"
+          ng-controller="ContactDetailsFormController as ctrl"
+          ng-submit="ctrl.save(DetailsForm.$valid)"
+          novalidate>
+        <!-- FIRST-NAME -->
+        <div class="form-group">
+          <label>{{'CONTACT.FirstName' | translate}}</label>
+          <input type="text" name="firstName" class="form-control" ng-model="ctrl.contact.firstName" placeholder="john" required>
+          <div class="alert alert-danger" role="alert" ng-show="DetailsForm.firstName.$invalid && !DetailsForm.firstName.$pristine">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            {{'CONTACT.FirstNameRequired' | translate}}
+          </div>
+        </div>
+      <!-- LAST-NAME -->
+      <div class="form-group">
+        <label>{{'CONTACT.LastName' | translate}}</label>
+        <input type="text" name="lastName" class="form-control" ng-model="ctrl.contact.lastName" placeholder="bravo" required>
+        <div class="alert alert-danger" role="alert" ng-show="DetailsForm.lastName.$invalid && !DetailsForm.lastName.$pristine">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error:</span>
+          {{'CONTACT.LastNameRequired' | translate}}
+        </div>
+      </div>
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : DetailsForm.email.$invalid && !DetailsForm.email.$pristine }">
+          <label>{{'CONTACT.Email' | translate}}</label>
+          <input type="email" name="email" class="form-control" ng-model="ctrl.contact.email" placeholder="john@bravo.com" required>
+          <div class="alert alert-danger" role="alert" ng-show="DetailsForm.email.$invalid && !DetailsForm.email.$pristine">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            {{'CONTACT.InvalidEmail' | translate}}
+          </div>
+        </div>
+        <!-- COUNTRY -->
+        <div class="form-group" ng-class="{ 'has-error' : DetailsForm.country.$invalid && !DetailsForm.country.$pristine }">
+          <label>{{'CONTACT.Country' | translate}}</label>
+          <select name="country" id="country" ng-model="ctrl.contact.country" required>
+            <option ng-repeat="option in ctrl.countryList" value="{{option}}">{{option}}</option>
+          </select>
+        </div>
+        <!-- DELETE BUTTON -->
+        <button class="btn btn-danger" ng-show="ctrl.contact.id" ng-click="ctrl.delete()">{{'DELETE' | translate}}</button>
+        <!-- SAVE BUTTON -->
+        <button class="btn btn-primary" type="submit" ng-disabled="DetailsForm.$invalid">{{'SAVE' | translate}}</button>
+        <!-- CANCEL BUTTON -->
+        <button class="btn btn-secondary" ng-click="ctrl.cancel()">{{'CANCEL' | translate}}</button>
+    </form>
+
+  </div>
+</div>

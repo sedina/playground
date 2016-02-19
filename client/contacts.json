@@ -1,0 +1,23 @@
+[
+  {
+    "id"   : "1",
+    "firstName" : "Johan",
+    "lastName": "Johnsson",
+    "email" : "1@gmail.com",
+    "country": "Sweden"
+  },
+  {
+    "id"   : "2",
+    "firstName" : "Stephen",
+    "lastName": "Stephensson",
+    "email" : "stephen@gmail.com",
+    "country": "England"
+  },
+  {
+    "id"   : "3",
+    "firstName" : "Sedina",
+    "lastName": "Oruc",
+    "email" : "123@gmail.com",
+    "country": "Sweden"
+  }
+]

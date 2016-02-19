@@ -1,0 +1,22 @@
+{
+  "APP.ToggleNavigation": "Toggle navigation",
+  "APP.Title": "Contact app",
+  "CONTACT.List": "Contact list",
+  "CONTACT.NameColumn": "Name",
+  "CONTACT.Add": "Add new contact",
+  "CONTACT.Details": "Contact details",
+  "CONTACT.FirstName": "First Name",
+  "CONTACT.LastName": "Last Name",
+  "CONTACT.Email": "Email",
+  "CONTACT.Country": "Country",
+  "CONTACT.FirstNameRequired": "First name is required",
+  "CONTACT.LastNameRequired": "Last name is required",
+  "CONTACT.InvalidEmail": "Enter a valid email address, Example: john@bravo.com",
+  "CONTACT.ListIsEmpty": "No existing contacts to show",
+  "SAVE": "Save",
+  "DELETE": "Delete",
+  "CANCEL": "Cancel",
+  "COUNTRY.Sweden": "Sweden",
+  "COUNTRY.Spain": "Spain",
+  "COUNTRY.England": "England"
+}

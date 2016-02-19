@@ -1,0 +1,22 @@
+{
+  "APP.ToggleNavigation": "Toggle navigation",
+  "APP.Title": "Contact app",
+  "CONTACT.List": "Kontakt lista",
+  "CONTACT.NameColumn": "Namn",
+  "CONTACT.Add": "Lägg till ny",
+  "CONTACT.Details": "Kontakt detaljer",
+  "CONTACT.FirstName": "Förnamn",
+  "CONTACT.LastName": "Efternamn",
+  "CONTACT.Email": "Email",
+  "CONTACT.Country": "Land",
+  "CONTACT.FirstNameRequired": "Förnamn är obligatorisk",
+  "CONTACT.LastNameRequired": "Efternamn är obligatorisk",
+  "CONTACT.InvalidEmail": "Ange godkänd email format, Exempel: john@bravo.com",
+  "CONTACT.ListIsEmpty": "Inga kontakter att visa",
+  "SAVE": "Spara",
+  "DELETE": "Ta bort",
+  "CANCEL": "Avbryt",
+  "COUNTRY.Sweden": "Sverige",
+  "COUNTRY.Spain": "Spanien",
+  "COUNTRY.England": "England"
+}

@@ -1,0 +1,23 @@
+<div class="row" ng-controller="ContactListController as ctrl">
+  <div class="col-md-6">
+    <!-- LIST ALL ITEMS -->
+    <table ng-table="ctrl.tableParams" show-filter="true" class="table table-bordered table-striped" ng-show="ctrl.contacts.length>0">
+      <tr ng-repeat="contact in $data track by contact.id">
+          <td title="'Name'" filter="{firstName: 'text'}" sortable="'firstName'">
+            <a ui-sref=".details({id:contact.id})" class="list-group-item" ng-class="{active: ctrl.isActive(contact.id)}">
+              {{contact.firstName}} {{contact.lastName}}
+            </a>
+          </td>
+      </tr>
+    </table>
+    <label ng-show="ctrl.contacts.length<=0">
+      {{'CONTACT.ListIsEmpty' | translate}}
+    </label>
+
+  </div>
+
+  <!-- DETAIL NEW/EDIT VIEW -->
+  <div class="col-md-6">
+    <ui-view/>
+  </div>
+</div>

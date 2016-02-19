@@ -1,0 +1,18 @@
+@import '../../bower_components/bootstrap/less/bootstrap';
+
+@contact-details-panel-h4-color: lighten(@text-color, 20%);
+
+.panel-contact {
+
+  h4 {
+    color: @contact-details-panel-h4-color;
+  }
+
+  > .panel-heading {
+    h4 {
+      color: lighten(@contact-details-panel-h4-color, 10%);
+      font-weight: bold;
+    }
+  }
+
+}
